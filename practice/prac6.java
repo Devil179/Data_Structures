@@ -18,6 +18,7 @@ public class prac6 {
         }
         for (int i = index; i < new_arr.length; i++) {
             new_arr[i] = arr[i + 1];
+
         }
         return new_arr;
     }
