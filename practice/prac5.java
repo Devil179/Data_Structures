@@ -5,7 +5,7 @@ public class prac5 {
         if (n % 2 == 0) {
             int mid1 = arr[(n / 2) - 1];
             int mid2 = arr[n / 2];
-            System.out.println("Middle elements: " + mid1 + " and " + mid2);
+            System.out.println("Middle elements: " + mid1 + " " + mid2);
         } 
         else {
             int mid = arr[n / 2];
