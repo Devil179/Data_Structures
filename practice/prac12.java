@@ -28,7 +28,8 @@ public class prac12 {
             System.out.print(0);
         if (n >= 2)
             System.out.print(" 1");
-        int a = 0, b = 1;
+        int a = 0;
+        int b = 1;
         for (int i = 3; i <= n; i++) {
             int c = a + b;
             System.out.print(" " + c);
@@ -49,11 +50,23 @@ public class prac12 {
             System.out.println();
         }
     }
+    static void printNums(int n){
+        if (n < 0) {
+            System.out.println();
+            return;
+        }
+        for (int i = 0; i <= n; i++){
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+    }
 
     public static void main(String[] args) {
+        print_fib(10);
         System.out.println(recur_fib(10));
         System.out.println(iter_fib(11));
-        print_fib(10);
         reversed(10);
+        printNums(10);
     }
 }
